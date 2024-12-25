@@ -1,4 +1,4 @@
-userInput = "Python Programming "
+userInput = input("Enter the String : ")
 
 vowelCount = 0
 spaceCount = 0
