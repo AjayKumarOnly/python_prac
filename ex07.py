@@ -10,11 +10,15 @@ def fibonacci(n):
         return fibonacci(n-1) + fibonacci(n-2)
 
 num_terms = int(input("Enter the number of terms for the Fibonacci series: "))
-
+lst=[]
 
 if num_terms <= 0:
     print("Please enter a positive integer.")
 else:
     print("Fibonacci Series:")
-    for i in range(1, num_terms + 1):
-        print(fibonacci(i), end=" ")
+    #lst = [fibonacci(i) for i in range(1, num_terms + 1)]
+    for i in range(1, 6): 
+        lst.append(fibonacci(i))  
+    print(lst)
+
+
