@@ -1,19 +1,11 @@
 a = int(input("Enter the First Number : "))
 b = int(input("Enter the Second Number : "))
 
-if a < b:
-    max = a
-    min = b
-else:
-    max = b
-    min = a
-
-def gcd_fun(max,min):
-    if min==0:
-        return max
+def gcd(a, b):
+    if b == 0:
+        return a
     else:
-           return  gcd_fun(min,max % min)
+        return gcd(b, a % b)
 
-ans = gcd_fun(max,min)
+print(gcd(a, b))
 
-print(ans)
